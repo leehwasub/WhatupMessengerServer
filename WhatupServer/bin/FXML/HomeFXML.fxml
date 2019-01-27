@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="467.0" prefWidth="694.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Label layoutX="211.0" layoutY="34.0" prefHeight="25.0" prefWidth="76.0" text="Whatup" textFill="#1ddb16">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="34.0" prefHeight="25.0" prefWidth="106.0" text="Messenger" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="406.0" layoutY="34.0" prefHeight="25.0" prefWidth="64.0" text="Server" textFill="#a0a2ab">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="log" layoutX="36.0" layoutY="109.0" prefHeight="300.0" prefWidth="617.0" />
+      <Label layoutX="43.0" layoutY="83.0" text="Log" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="ipText" layoutX="91.0" layoutY="430.0" prefHeight="23.0" prefWidth="173.0" promptText="IP" />
+      <JFXTextField fx:id="portText" layoutX="328.0" layoutY="430.0" prefHeight="23.0" prefWidth="157.0" promptText="port" />
+      <JFXButton fx:id="serverStart" layoutX="564.0" layoutY="429.0" onAction="#serverButtonAction" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #1DDB16;" text="Start" textFill="WHITE" />
+   </children>
+</AnchorPane>
